@@ -121,6 +121,20 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \newcommand{\interest}[1]{\sqbullet \> \textbf{#1}\\[3pt]} % Define a custom command for individual interests
 
 %----------------------------------------------------------------------------------------
+%	PUBLICATIONS GROUP COMMAND
+%-----------------------------------------------------------------------------------------
+
+\newcommand{\publicationgroup}[2]{
+	\begin{tabbing}
+		\hspace{5mm} \= \kill
+		\sqbullet \>\+ #1 \\
+		\begin{minipage}{\smallertextwidth}
+			\vspace{2mm}
+			\textit{#2}
+		\end{minipage}
+	\end{tabbing}
+}
+%----------------------------------------------------------------------------------------
 %	TABBED BLOCK COMMAND
 %----------------------------------------------------------------------------------------
 
